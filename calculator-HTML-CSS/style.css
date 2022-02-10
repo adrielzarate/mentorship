@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'TickingTimebomb';
+    src: url('TickingTimebombBB.ttf')  format('truetype');
+}
+
+input {
+    background-color: #c2c1a8;
+    border: #73716e solid 3px;
+    border-radius: 3px;
+    font-family: 'TickingTimebomb';
+    font-size: 24px;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+	box-shadow: inset 0px 1px 3px 0px #ffffff, 0px 2px 3px -1px #A0A1A0;
+	background: linear-gradient(to bottom, #ffffff 5%, #ebebeb 100%);
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+	display: inline-block;
+	cursor: pointer;
+	color: #6b6b6b;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 11px 23px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #ededed;
+}
+
+button:hover {
+	background: linear-gradient(to bottom, #ebebeb 5%, #ffffff 100%);
+	background-color: #ebebeb;
+}
+
+.btn-dark-grey {
+	box-shadow: inset 0px 1px 3px 0px #a1a1a1;
+	background: linear-gradient(to bottom, #6b6b6b 5%, #2e2e2e 100%);
+	background-color: #6b6b6b;
+	border-radius: 5px;
+	border: 1px solid #575757;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 11px 23px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #707070;
+}
+
+.btn-dark-grey {
+	background: linear-gradient(to bottom, #2e2e2e 5%, #6b6b6b 100%);
+	background-color: #2e2e2e;
+}
+
+.btn-grey {
+	background: linear-gradient(to bottom, #b8b8b8 5%, #696969 100%);
+	background-color: #b8b8b8;
+	border-radius: 5px;
+	border: 1px solid #bdbdbd;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 11px 23px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #757575;
+}
+
+.btn-grey:hover {
+	background: linear-gradient(to bottom, #696969 5%, #b8b8b8 100%);
+	background-color: #696969;
+}
+
+.btn-red {
+	box-shadow: inset 0px 1px 3px 0px #ffdcd1;
+	background: linear-gradient(to bottom, #ff968f 5%, #f05922 100%);
+	background-color: #ff968f;
+	border-radius: 5px;
+	border: 1px solid #bababa;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 11px 23px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #ff1100;
+}
+
+.btn-red:hover {
+	background: linear-gradient(to bottom, #f05922 5%, #ff968f 100%);
+	background-color: #f05922;   
+}

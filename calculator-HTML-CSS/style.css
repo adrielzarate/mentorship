@@ -1,6 +1,16 @@
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'TickingTimebomb';
     src: url('TickingTimebombBB.ttf')  format('truetype');
+}
+
+body {
+    background-color: #efeeee;
 }
 
 input {
@@ -8,9 +18,12 @@ input {
     border: #73716e solid 3px;
     border-radius: 3px;
     font-family: 'TickingTimebomb';
-    font-size: 24px;
-    padding: 10px;
+    font-size: 60px;
+    padding: 10px 10px 0px;
     text-align: right;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 35%) 0px -50px 36px -28px inset;
+    height: 60px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -20,17 +33,25 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input:focus{
+    outline: none;
+}
+
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
 
 button {
-	box-shadow: inset 0px 1px 3px 0px #ffffff, 0px 2px 3px -1px #A0A1A0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 1px, 
+                rgba(0, 0, 0, 0.09) 0px 1px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.09) 0px 4px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 16px;
 	background: linear-gradient(to bottom, #ffffff 5%, #ebebeb 100%);
 	background-color: #ffffff;
+    border: none;
 	border-radius: 5px;
-	border: 1px solid #cccccc;
 	display: inline-block;
 	cursor: pointer;
 	color: #6b6b6b;
@@ -40,6 +61,9 @@ button {
 	padding: 11px 23px;
 	text-decoration: none;
 	text-shadow: 0px -1px 0px #ededed;
+    width: 70px;
+    margin: 0 5px 10px 0;
+    border: solid thin #cacaca;
 }
 
 button:hover {
@@ -47,12 +71,14 @@ button:hover {
 	background-color: #ebebeb;
 }
 
+.d-flex {
+    display: flex;
+}
+
 .btn-dark-grey {
-	box-shadow: inset 0px 1px 3px 0px #a1a1a1;
 	background: linear-gradient(to bottom, #6b6b6b 5%, #2e2e2e 100%);
 	background-color: #6b6b6b;
 	border-radius: 5px;
-	border: 1px solid #575757;
 	display: inline-block;
 	cursor: pointer;
 	color: #ffffff;
@@ -62,9 +88,10 @@ button:hover {
 	padding: 11px 23px;
 	text-decoration: none;
 	text-shadow: 0px -1px 0px #707070;
+    border: #a1a1a1 solid thin;
 }
 
-.btn-dark-grey {
+.btn-dark-grey:hover {
 	background: linear-gradient(to bottom, #2e2e2e 5%, #6b6b6b 100%);
 	background-color: #2e2e2e;
 }
@@ -73,7 +100,6 @@ button:hover {
 	background: linear-gradient(to bottom, #b8b8b8 5%, #696969 100%);
 	background-color: #b8b8b8;
 	border-radius: 5px;
-	border: 1px solid #bdbdbd;
 	display: inline-block;
 	cursor: pointer;
 	color: #ffffff;
@@ -83,6 +109,7 @@ button:hover {
 	padding: 11px 23px;
 	text-decoration: none;
 	text-shadow: 0px -1px 0px #757575;
+    border: #a1a1a1 solid thin;
 }
 
 .btn-grey:hover {
@@ -91,11 +118,9 @@ button:hover {
 }
 
 .btn-red {
-	box-shadow: inset 0px 1px 3px 0px #ffdcd1;
 	background: linear-gradient(to bottom, #ff968f 5%, #f05922 100%);
 	background-color: #ff968f;
 	border-radius: 5px;
-	border: 1px solid #bababa;
 	display: inline-block;
 	cursor: pointer;
 	color: #ffffff;
@@ -105,9 +130,54 @@ button:hover {
 	padding: 11px 23px;
 	text-decoration: none;
 	text-shadow: 0px -1px 0px #ff1100;
+    border: #a1a1a1 solid thin;
 }
 
 .btn-red:hover {
 	background: linear-gradient(to bottom, #f05922 5%, #ff968f 100%);
 	background-color: #f05922;   
+}
+
+.btn-longer {
+    width: 149px;
+}
+
+.btn-higher  {
+    height: 95px;
+}
+
+.btn-longer + button {
+    margin-right: 0;
+}
+
+.container {
+    width: 310px;
+}
+
+.container button:nth-child(4n) {
+    margin-right: 0;
+}
+
+.input-container {
+    border-radius: 6px;
+    padding: 3px;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom,  #565656 0%,#bababa 7%,#bababa 92%,#ffffff 100%);
+}
+
+.numbers {
+    width: 230px;
+    margin-right: 5px;
+}
+
+.numbers button:nth-child(4n) {
+    margin-right: 5px;
+}
+
+.numbers button:nth-child(3n) {
+    margin-right: 0;
+}
+
+.numbers + div {
+    width: 70px;
 }
